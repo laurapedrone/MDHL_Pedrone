@@ -69,18 +69,25 @@ nav{
     
 }
 
-a{
+nav li a{
     display: block;
     margin: 10px;
     padding: 20px;
 }
-a:hover{
+nav li a:active{
   color: black;
   margin: 10px;
   padding: 24px 10px;
   cursor: pointer;
   text-decoration: none;
 }
+nav li a:hover{
+    color: black;
+    margin: 10px;
+    padding: 24px 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
 .secciones{
     padding:15px;
     margin: 30px;
