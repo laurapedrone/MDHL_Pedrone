@@ -44,7 +44,7 @@ header{
 
 
 .contenido{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.50)), url(../img/hockey_1.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(../img/hockey_1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -52,7 +52,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .navtotal{
@@ -84,7 +84,7 @@ a:hover{
     padding:15px;
     margin: 30px;
     max-width: 100%;
-    flex-basis: auto;
+ 
 }
 p{
     text-indent: 1.5em;
@@ -94,7 +94,7 @@ p{
 section{
     margin: 20px;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid #ffad08;
     border-radius: 1rem;
     
 }
