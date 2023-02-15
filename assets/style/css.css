@@ -187,7 +187,7 @@ footer{
 .logofooter{
     height: 65px;
 }
-/*----------------------ABOUT-------------------*/
+/*----------------------ABOUT Y CONTACT-------------------*/
 .contenedor_about{
     padding: 2rem 0;
     display: flex;
@@ -197,11 +197,9 @@ footer{
     justify-content: center;
     color: white;
 }
-
 .section{
     width: 334px;
     height: 250px;
-    display: flex;
 }
 .section img{
     width: 100%;
@@ -212,4 +210,7 @@ footer{
     font: bold 25px Arial, Helvetica, sans-serif;
     letter-spacing: 0.5px;
 }
-
+.section a{
+    color: #fca311;
+}
+/*----------------------------------------------*/
