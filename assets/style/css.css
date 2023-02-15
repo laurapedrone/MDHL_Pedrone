@@ -56,8 +56,7 @@ nav a:hover{
 }
 
 main{
-    background-color:  #14213d;
-    min-height: 250vh;
+    background-color:  #14213dea;
     padding: 0 2rem;
 }
 
@@ -90,7 +89,7 @@ main{
     background-size: 100% 100%;
     background-size: cover;
     width: 100%;
-    min-height: 500px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,4 +212,176 @@ footer{
 .section a{
     color: #fca311;
 }
-/*----------------------------------------------*/
+
+/*------------------GAME INFO----------------------------*/
+.contenedor_game{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+.section_game{
+    width: 100%;
+    height: 100%;
+}
+.section_game img{
+    width: 100%;
+    object-fit: cover;
+    padding: 1rem 0;
+}
+.section_game h1{
+    font: bold 25px Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+.section_game h2{
+    font: bold 20px Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    color: #fca311;
+}
+.section_texto_game_phone{
+    width: 235px;
+    height: 40px;
+}
+.section_texto_game_email{
+    width: 300px;
+    height: 40px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*------------------tabla GAME INFO----------------------------*/
+.tabla_game{
+    letter-spacing: 0.5px;
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+caption{
+    font: bold 25px Arial, Helvetica, sans-serif;
+    color: #fca311;
+    padding: 1rem;
+    display: table-caption;
+}
+th{
+    font: bold 20px Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+td{
+    text-align: center;
+    padding: 1rem;
+}
+.active_td{
+    background-color: #fca211a9;
+}
+/*............RULES...............*/
+.contenedor_rules{
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section_rules{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.section_rules img, .section_rules div{
+    height: 100%;
+}
+
+.section_texto_rules{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.section_rules img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.section_texto_rules h1{
+    font: bold 25px Arial, Helvetica, sans-serif;
+    color:#fca311;
+}
+
+.section_texto_rules p{
+    text-indent: 40px;
+    color: white
+}
+/*-------listas rules------------*/
+.lista_rules{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.lista_texto_rules{
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.lista_texto_rules li{
+    color:white;
+    padding: 1rem 0;
+}
+
+dl > dt{
+    font: bold 25px Arial, Helvetica, sans-serif;
+    color:#fca311;
+    padding: 1rem 0;
+}
+dl > dd{
+    padding: 1rem 0;
+    text-indent: 40px;
+    color: white
+}
+
+.lista_texto_rules h1{
+    font: bold 25px Arial, Helvetica, sans-serif;
+    color:#fca311;
+    padding: 1rem 0;
+}
+.lista_rules img{
+    border-radius: 1rem;
+}
+
+.lista_texto_rules ul > li{
+    color:#e20303;
+    margin: 3rem;
+    list-style: circle;
+}
+
+li::marker{
+    font-size: 1.5rem;
+}
+.lista_rules img, .lista_rules div{
+    height: 100%;
+}
+
+.lista_texto_rules{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.lista_rules img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
