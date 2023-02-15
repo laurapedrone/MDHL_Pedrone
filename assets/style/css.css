@@ -57,7 +57,7 @@ nav a:hover{
 
 main{
     background-color:  #14213d;
-    min-height: 87vh;
+    min-height: 250vh;
     padding: 0 2rem;
 }
 
@@ -67,10 +67,10 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 2rem;
 }
 
 .titulo_main h2{
-    padding: 2rem;
     text-align: center;
     font: bold 25px Arial, Helvetica, sans-serif;
     color: white;
@@ -109,7 +109,7 @@ main{
 .logo{
     height:300px;
 }
-
+/*--------------------INDEX---------------------*/
 .contenedor_index{
     padding: 2rem 0;
     display: flex;
@@ -187,3 +187,29 @@ footer{
 .logofooter{
     height: 65px;
 }
+/*----------------------ABOUT-------------------*/
+.contenedor_about{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.section{
+    width: 334px;
+    height: 250px;
+    display: flex;
+}
+.section img{
+    width: 100%;
+    object-fit: cover;
+    padding: 1rem 0;
+}
+.section h1{
+    font: bold 25px Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+
