@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /*outline: 1px solid red;*/
+}
+
+header{
+    padding: 200px;
+    background-color: #12161e;
+    min-height: 8vh;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tituloprincipal{  
+    font: bold 25px Arial, Helvetica, sans-serif;
+    color: #fca311;
+    text-shadow: 1px 1px red;
+    flex-grow: 1;
+}
+nav{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav a{
+    height: 2rem;
+    width: 6.5rem;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.active{
+    background-color: #fca311;
+    color: white;
+}
+
+nav a:hover{
+    background-color: #fca311;
+    color: white;
+    cursor: pointer;
+}
+
+main{
+    background-color:  #14213d;
+    min-height: 87vh;
+    padding: 0 2rem;
+}
+
+.titulo_main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo_main h2{
+    padding: 2rem;
+    text-align: center;
+    font: bold 25px Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.titulo_main p{
+    color: #fca311;
+    font: bold 15px Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.fondo_principal{
+    background-image: url(../img/design1_image1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-size: cover;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.textosubtitulo{
+    text-align: center;
+    color: whitesmoke;
+    font: bold 70px Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.445);
+}
+
+.logo{
+    height:300px;
+}
+
+.contenedor_index{
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+section{
+    width: 411px;
+    height: 250px;
+    display: flex;
+    background-color: #ffffff;
+}
+
+section img, section div{
+    height: 100%;
+}
+
+section div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+section img{
+    width: 40%;
+    object-fit: cover;
+}
+
+section div h1{
+    width: auto;
+    transform: translateX(-5rem);
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.445);
+    background-color: rgba(0, 0, 0, 0.261);
+    border-radius: 10px;
+}
+
+section div p{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color:#868a93
+}
+
+footer{
+    background-color: #12161e;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color:  #e5e5e5;
+}
+
+.copyright{
+    font-size: 0.7rem;
+}
+
+.copyright h3{
+    color: #fca311;
+}
+
+.copyright .club{
+    color: #fca311
+}
+.copyright a{
+    color: #e5e5e5;
+}
+
+.logofooter{
+    height: 65px;
+}
