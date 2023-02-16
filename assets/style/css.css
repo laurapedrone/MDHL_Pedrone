@@ -24,6 +24,9 @@ header{
     text-shadow: 1px 1px red;
     flex-grow: 1;
 }
+.logoprincipal{
+    height: 80px;
+}
 nav{
     display: flex;
     gap: 0.5rem;
@@ -56,8 +59,8 @@ nav a:hover{
 }
 
 main{
-    background-color:  #14213dea;
-    padding: 0 2rem;
+    background-color: #12161ef5;
+
 }
 
 .titulo_main{
@@ -71,19 +74,20 @@ main{
 
 .titulo_main h2{
     text-align: center;
-    font: bold 25px Arial, Helvetica, sans-serif;
+    font: bold 35px Arial, Helvetica, sans-serif;
     color: white;
     letter-spacing: 0.5px;
 }
 
 .titulo_main p{
     color: #fca311;
-    font: bold 15px Arial, Helvetica, sans-serif;
+    font: bold 30px Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 .fondo_principal{
-    background-image: url(../img/design1_image1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                  url(../img/design1_image1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -103,20 +107,19 @@ main{
     color: whitesmoke;
     font: bold 70px Arial, Helvetica, sans-serif;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.445);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
-.logo{
-    height:300px;
-}
 /*--------------------INDEX---------------------*/
 .contenedor_index{
     padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     color: white;
 }
-
 section{
     width: 411px;
     height: 250px;
@@ -132,13 +135,13 @@ section div{
     width: 60%;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
-    gap: 1rem;
+    padding: 1rem;
 }
 
 section img{
     width: 40%;
     object-fit: cover;
+    padding: 1rem;
 }
 
 section div h1{
@@ -190,42 +193,60 @@ footer{
 .contenedor_about{
     padding: 2rem 0;
     display: flex;
-    align-items: center;
-    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
     color: white;
 }
+
+.section_texto_about{
+    margin:  1rem;
+  }
+
 .section{
     width: 30%;
     height: 100%;
 }
-.section img{
+.imagen_about{
     width: 100%;
+    height: 250px;
     object-fit: cover;
-    padding: 1rem 0;
+    border-radius: 1rem;
 }
-.section h1{
+.section_texto_about h1{
     font: bold 25px Arial, Helvetica, sans-serif;
     letter-spacing: 0.5px;
+    padding: 1rem;
 }
-.section a{
+
+.section_texto_about p{
+    padding: 1rem 0;
+}
+.section_texto_about a{
     color: #fca311;
 }
 
 /*------------------GAME INFO----------------------------*/
 .contenedor_game{
-    padding: 2rem 0;
+    padding: 2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     color: white;
 }
 .section_game{
     width: 100%;
     height: 100%;
+    display: flex;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 .section_game img{
     width: 100%;
@@ -256,9 +277,9 @@ footer{
 /*------------------tabla GAME INFO----------------------------*/
 .tabla_game{
     letter-spacing: 0.5px;
-    padding: 2rem 0;
     width: 100%;
     height: 100%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,9 +303,10 @@ td{
 .active_td{
     background-color: #fca211a9;
 }
+
 /*............RULES...............*/
 .contenedor_rules{
-    padding: 2rem 0;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -293,6 +315,7 @@ td{
 .section_rules{
     width: 100%;
     height: 100%;
+    padding: 2rem;
     display: flex;
 }
 
@@ -323,8 +346,10 @@ td{
     text-indent: 40px;
     color: white
 }
+
 /*-------listas rules------------*/
 .lista_rules{
+    padding: 2rem;
     width: 100%;
     height: 100%;
     display: flex;
