@@ -6,6 +6,7 @@
     /*outline: 1px solid red;*/
 }
 
+/*-----------------HEADER--------------------------------*/
 header{
     padding: 200px;
     background-color: #12161e;
@@ -19,11 +20,12 @@ header{
 }
 
 .tituloprincipal{  
-    font: bold 25px Arial, Helvetica, sans-serif;
+    font-size: 25px;
     color: #fca311;
     text-shadow: 1px 1px red;
     flex-grow: 1;
 }
+
 .logoprincipal{
     height: 80px;
 }
@@ -57,7 +59,21 @@ nav a:hover{
     color: white;
     cursor: pointer;
 }
+@media (max-width:513px){
+    
+    .tituloprincipal{  
+    font-size: 20px;
+    }
+    .logoprincipal{
+        height: 60px;
+    }
+    nav, nav a{
+        width: 100%;
+    }
+}
 
+
+/*----------------------------------FIN HEADER------------------------------------ */
 main{
     background-color: #12161ef5;
 
@@ -111,6 +127,26 @@ main{
     text-transform: uppercase;
 }
 
+/*-------------MEDIAQUERIES--------------*/
+@media (max-width:540px){
+    
+
+    .textosubtitulo{
+        font-size: 35px;
+    }
+}
+
+@media (max-width:280px){
+
+    .tituloprincipal{  
+        font-size: 15px;
+        } 
+    .textosubtitulo{
+        font-size: 25px;
+    }
+}
+
+
 /*--------------------INDEX---------------------*/
 .contenedor_index{
     padding: 2rem 0;
@@ -120,31 +156,31 @@ main{
     align-items: center;
     color: white;
 }
-section{
+.section_index{
     width: 411px;
     height: 250px;
     display: flex;
     background-color: #ffffff;
 }
 
-section img, section div{
+.section_index img, .section_index div{
     height: 100%;
 }
 
-section div{
+.section_index div{
     width: 60%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-section img{
+.section_index img{
     width: 40%;
     object-fit: cover;
     padding: 1rem;
 }
 
-section div h1{
+.section_index div h1{
     width: auto;
     transform: translateX(-5rem);
     color: white;
@@ -154,7 +190,7 @@ section div h1{
     border-radius: 10px;
 }
 
-section div p{
+.section_index div p{
     padding: 0.5rem;
     border-radius: 1rem;
     color:#868a93
@@ -344,7 +380,8 @@ td{
 
 .section_texto_rules p{
     text-indent: 40px;
-    color: white
+    color: white;
+    text-align: justify;
 }
 
 /*-------listas rules------------*/
@@ -409,4 +446,112 @@ li::marker{
     width: 50%;
     object-fit: cover;
     border-radius: 1rem;
+}
+/*-------------Register-----------------*/
+.contenedor_register{
+    color: white;
+    padding: 2rem;
+}
+
+form{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+fieldset{
+    width: 40rem;
+    padding: 1rem;
+    border: 2px solid #fca311;
+}
+
+legend{
+    font: bold 20px Arial, Helvetica, sans-serif;
+}
+
+
+input[type=text], input[type=number], input[type=date]{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: #004486;
+  }
+  
+p{
+    text-align: justify;
+}
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+  }
+  
+  /* appearance for checked radiobutton */
+  input[type="radio"]:checked {
+    background-color: #fca311;
+  }
+  
+  /* optional styles, I'm using this for centering radiobuttons */
+  .flexinput {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  input[type="checkbox"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #bbbbbb;
+    background-color: #e7e6e7;
+  }
+
+  input[type="checkbox"]:checked{
+    background-color: #fca311;
+  }
+
+  button {
+    background-color: #717e71; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 1rem;
+  }
+
+
+/*-------------MEDIAQUERIES--------------*/
+@media (max-width:425px){
+    
+    .tituloprincipal{
+        font-size: 2rem;
+    }
 }
